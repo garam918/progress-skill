@@ -1,0 +1,14 @@
+[
+  {
+    "criterion": "persists",
+    "kind": "manual",
+    "result": "passed",
+    "detail": "Example only. Saved a note, restarted the app, and reopened the saved title and body."
+  },
+  {
+    "criterion": "rejects-empty",
+    "kind": "automated",
+    "result": "passed",
+    "detail": "Example only. The blank-title integration check observed a validation error and zero new records."
+  }
+]

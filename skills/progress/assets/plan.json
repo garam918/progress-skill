@@ -1,0 +1,25 @@
+{
+  "project": "MemoFlow",
+  "scope": "Local note creation and listing for the first release",
+  "tasks": [
+    {
+      "id": "create-note",
+      "title": "Create a note from the editor",
+      "weight": 3,
+      "criteria": {
+        "persists": "Saving a non-empty note persists its title and body after a restart.",
+        "rejects-empty": "Saving a blank title shows a validation error and creates no record."
+      },
+      "depends_on": []
+    },
+    {
+      "id": "list-notes",
+      "title": "Show saved notes on the home screen",
+      "weight": 2,
+      "criteria": {
+        "lists-saved": "The home screen lists saved notes with the newest first."
+      },
+      "depends_on": ["create-note"]
+    }
+  ]
+}
